@@ -6,7 +6,7 @@ linshire在CH32V307的开发中，发现了在驱动中RT-USING和BSP_USING中�
 
 下面是在CH32V307的drv_soft_i2c.c中的宏配置，使用了#ifdef BSP_USING_SOFT_I2C
 
-```
+```c
 #include <board.h>
 #include "drv_soft_i2c.h"
 
@@ -47,4 +47,32 @@ linshire在CH32V307的开发中，发现了在驱动中RT-USING和BSP_USING中�
 
 
 至于在其他驱动文件，包括stm32等，BSP_USING与RT_USING混用也比较严重，各式各样，至于Kconfig中则稍好一些
+
+![image-20221023212939875](problem_log.assets/image-20221023212939875.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
